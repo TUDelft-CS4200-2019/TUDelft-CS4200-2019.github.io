@@ -30,7 +30,7 @@ The test suite should provide
 2. Test cases for
   * errors on duplicate definitions of classes, fields, parameters, and variables,
   * errors on missing definitions of classes, fields, parameters, and variables,
-  * warnings on parameters and variables hiding fields,
+  * errors on parameters and variables hiding fields,
   * errors on fields hiding fields in a parent class.
 
 ### Submission
@@ -164,8 +164,8 @@ Do not use start symbols other than `Program`.
 
 ### Testing Error Checking
 
-In test cases for error checking, you need to specify the number of errors, warnings, or notes in a
-test case in `errors`, `warnings`, or `notes` clauses.  For example, the following test cases
+In test cases for error checking, you need to specify the number of errors in a
+test case in `errors` clauses. For example, the following test cases
 specify a correct MiniJava program, a program with two errors which are reported on the name of a
 duplicate class `Foo`, and another program with an error which is reported on the name of an unknown
 class `Bar`:
