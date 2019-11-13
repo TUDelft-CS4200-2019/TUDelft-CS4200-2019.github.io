@@ -113,7 +113,7 @@ name. Therefore, you must define a relation that associates the class name with 
 
     signature
       relations
-        className : -> ID
+        className : scope -> ID
         
 In the rule for class declarations, use the constraint `!className[x] in s_cls`, where `x` is the
 class name, and `s_cls` is the class scope, to store the class name. *If you don't do this, some of
